@@ -81,7 +81,7 @@ Inside sample database
 2. create a new collection in your city database which you created recently.
 
 ### capped collection(5 min)
-Capped collection is a fixed size collecction that automatically overwrites its oldest entries when it reaches its maximum size. If you specify true, you need to specify size(in bytes) parameter also.
+Capped collection is a fixed size collection that automatically overwrites its oldest entries when it reaches its maximum size. If you specify true, you need to specify size(in bytes) parameter also.
 `db.createCollection("posts", {capped: true, size: 4096})`
 
   - We can even add maximum number of documents to a capped collection using max field.
@@ -96,7 +96,7 @@ Capped collection is a fixed size collecction that automatically overwrites its 
 
 ### Drop collection(5 min)
 Deletes a collection.
-  - `db.COLLECTION_NAME.drop()` drops the whole collection with the contents. 
+  - `db.COLLECTION_NAME.drop()` drops the whole collection with the contents.
   - `db.COLLECTION_NAME.remove({})` drops all document from collection but collection remains.
 
 ### Rename collection
